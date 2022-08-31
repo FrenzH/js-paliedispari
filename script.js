@@ -31,7 +31,7 @@ const name = prompt('Enter a name');
 
 
 if(isNaN(name)){
-    reverse(name);
+    
     
     if(name === reverse(name)){
         console.log('Your name is palindrome')
