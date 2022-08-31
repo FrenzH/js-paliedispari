@@ -63,12 +63,28 @@ function getRandomNumber(min,max){
 }
 
 
+function SumOddOrEven(sum){
+    let type;
+    if(sum % 2 ===0){
+        type = 'even'
+
+        
+        
+    }
+    else{
+        type = 'odd'
+    
+    }
+    return type;
+}
 
 
 
 
 
-const oddOrEven = prompt('Odd or even?')
+let oddOrEven = prompt('Odd or even?');
+oddOrEven = oddOrEven.toLowerCase();
+
 
 const number = parseInt(prompt('Enter a number between 1 to 5'))
 
@@ -78,26 +94,15 @@ if(!isNaN(number) & oddOrEven == 'even'  || oddOrEven== 'odd'){
     const sum = number + result ;
     console.log(result)
     console.log(sum)
-    if(sum % 2 ===0 & oddOrEven==='even'){
-        console.log('player wins!')
     
-       }
-       
-    else if(sum %2 ===0 & oddOrEven === 'odd'){
-        console.log('computer wins')
-       }
-
-       
-    else if(sum %2 !=0 & oddOrEven === 'odd'){
-        console.log('player wins!')
-
-       }
-       
-       
+    if(SumOddOrEven(sum) === oddOrEven){
+        console.log('Player wins! Congratulations')
+    }
+    
     else{
-        console.log('computer wins')
-       }
+        console.log('Computer wins :( ...please retry!')
 
+    }
 
 
 
