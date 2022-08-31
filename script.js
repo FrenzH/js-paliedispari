@@ -49,12 +49,57 @@ if(isNaN(name)){
 //OddOrEven
 
 
+
+
+
+//functions
+
+
+function getRandomNumber(min,max){
+    const range = max - min; 
+    const random = Math.floor(Math.random()*range)  
+    const result = min + random;
+    return result;
+}
+
+
+
+
+
+
+
 const oddOrEven = prompt('Odd or even?')
 
 const number = parseInt(prompt('Enter a number between 1 to 5'))
 
 
 if(!isNaN(number) & oddOrEven == 'even'  || oddOrEven== 'odd'){
-    console.log('correct')
-}
+    result = getRandomNumber(1,5);
+    const sum = number + result ;
+    console.log(result)
+    console.log(sum)
+    if(sum % 2 ===0 & oddOrEven==='even'){
+        console.log('player wins!')
+    
+       }
+       
+    else if(sum %2 ===0 & oddOrEven === 'odd'){
+        console.log('computer wins')
+       }
 
+       
+    else if(sum %2 !=0 & oddOrEven === 'odd'){
+        console.log('player wins!')
+
+       }
+       
+       
+    else{
+        console.log('computer wins')
+       }
+
+
+
+
+}
+ 
