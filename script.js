@@ -23,7 +23,7 @@ function reverse(str){
 
 }
 
-
+//main
 
 const name = prompt('Enter a name');
 
@@ -41,3 +41,20 @@ if(isNaN(name)){
         console.log('Your name is not palindrome')
     }
 }
+
+
+
+
+
+//OddOrEven
+
+
+const oddOrEven = prompt('Odd or even?')
+
+const number = parseInt(prompt('Enter a number between 1 to 5'))
+
+
+if(!isNaN(number) & oddOrEven == 'even'  || oddOrEven== 'odd'){
+    console.log('correct')
+}
+
