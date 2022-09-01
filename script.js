@@ -19,24 +19,17 @@ console.log('JS OK!')
 
 
 function reverse(str){
-    return str.split("").reverse().join("");
-
+    return str.split("").reverse().join('');
 }
 
 //main
 
 const name = prompt('Enter a name');
 
-
-
-
-if(isNaN(name)){
-    
-    
+if(isNaN(name)){    
     if(name === reverse(name)){
         console.log('Your name is palindrome')
     }
-    
     else{
         console.log('Your name is not palindrome')
     }
